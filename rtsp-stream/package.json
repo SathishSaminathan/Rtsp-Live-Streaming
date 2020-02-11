@@ -1,0 +1,16 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Kurulum  npm i  node app.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ffmpeg": "0.0.4",
+    "node-onvif": "^0.1.7",
+    "node-rtsp-stream": "0.0.8"
+  }
+}
