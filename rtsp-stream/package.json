@@ -1,7 +1,7 @@
 {
-  "name": "y",
+  "name": "Live Stream from IP Camera",
   "version": "1.0.0",
-  "description": "Kurulum  npm i  node app.js",
+  "description": "npm i  node app.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
