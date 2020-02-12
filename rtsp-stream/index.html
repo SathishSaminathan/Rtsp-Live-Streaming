@@ -4,31 +4,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>RTSP STREAMING NODE JS IP CAMERA</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script defer src="face-api.min.js"></script>
+    <script defer src="script.js"></script>
   </head>
 
   <body>
+    <!-- <video id="video" width="720" height="560" autoplay muted>
+      <source
+        src="https://github.com/intel-iot-devkit/sample-videos/raw/master/head-pose-face-detection-male.mp4"
+      />
+    </video> -->
     <!-- Ipcam Area starts-->
-    <div><canvas id="videoCanvas1" width="640" height="360"></canvas></div>
-    <div><canvas id="videoCanvas2" width="640" height="360"></canvas></div>
+    <div>
+      <canvas id="videoCanvas1" class="cctv" width="640" height="360"></canvas>
+    </div>
+    <div>
+      <canvas id="videoCanvas2" class="cctv" width="640" height="360"></canvas>
+    </div>
     <script type="text/javascript" src="jsmpeg.min.js"></script>
     <script type="text/javascript">
-      var canvas1 = document.getElementById("videoCanvas1");
-      var canvas2 = document.getElementById("videoCanvas2");
+      // var canvas1 = document.getElementById("videoCanvas1");
+      // var canvas2 = document.getElementById("videoCanvas2");
 
-      // var ws = new WebSocket("ws://localhost:9999");
+      // // var ws = new WebSocket("ws://localhost:9999");
 
-      var player = new JSMpeg.Player("ws://localhost:9999", {
-        canvas: canvas1,
-        autoplay: true,
-        audio: false,
-        loop: true
-      });
-      var player = new JSMpeg.Player("ws://localhost:9999", {
-        canvas: canvas2,
-        autoplay: true,
-        audio: false,
-        loop: true
-      });
+      // var player = new JSMpeg.Player("ws://localhost:9999", {
+      //   canvas: canvas1,
+      //   autoplay: true,
+      //   audio: false,
+      //   loop: true
+      // });
     </script>
     <!-- Ipcam Area ends -->
   </body>
